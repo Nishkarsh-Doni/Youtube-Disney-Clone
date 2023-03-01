@@ -7,6 +7,12 @@ const Login = (props) => {
         <CTA>
           <CTALogoOne src="/images/cta-logo-one.svg" alt=""></CTALogoOne>
           <SignUp>GET ALL THERE</SignUp>
+          <Description>
+            Get premium access to Raya and The Legends of Dragon for addition
+            fees with Disney+ Subscription. As of 03/26/23. The price of Disney+
+            and Disney Bundle will increase by $1.
+          </Description>
+          <CTALogoTwo src="/images/cta-logo-two.png" alt=""></CTALogoTwo>
         </CTA>
         <BgImage />
       </Content>
@@ -79,6 +85,14 @@ const CTALogoOne = styled.img`
   width: 100%;
 `;
 
+const CTALogoTwo = styled.img`
+  margin-bottom: 20px;
+  max-width: 600px;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+`;
+
 const SignUp = styled.a`
   font-weight: bold;
   color: #f9f9f9;
@@ -91,9 +105,17 @@ const SignUp = styled.a`
   border: solid 1px transparent;
   border-radius: 4px;
 
-  &:hover{
+  &:hover {
     background-color: #0483ee;
   }
+`;
+
+const Description = styled.p`
+  color: hsla(0, 0%, 95.3%, 1);
+  font-size: 11px;
+  margin: 0 0 24px;
+  line-height: 1.5;
+  word-spacing: 1.5px;
 `;
 
 export default Login;
